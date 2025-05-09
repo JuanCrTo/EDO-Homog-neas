@@ -1,4 +1,4 @@
-import HomogeneousChecker from "@/components"
+import HomogeneousChecker from "@/components/HomogeneousChecker"
 
 export default function HomePage() {
   return (
