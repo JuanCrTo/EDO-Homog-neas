@@ -1,6 +1,7 @@
 import nerdamer from 'nerdamer'
 import 'nerdamer/Calculus'
 import 'nerdamer/Algebra'
+import { z } from 'zod'
 
 export function isHomogeneous(M: string, N: string): boolean {
   try {
@@ -32,4 +33,14 @@ export function isHomogeneous(M: string, N: string): boolean {
     console.error('Error al verificar homogeneidad:', err)
     return false
   }
+}
+
+// Esquema de validación para la entrada M(x, y) y N(x, y)
+export const equationSchema = z.object({
+  M: z.string().min(1, "La expresión M(x, y) no puede estar vacía"),
+  N: z.string().min(1, "La expresión N(x, y) no puede estar vacía"),
+})
+
+export function validateEquationInput(input: { M: string, N: string }) {
+  return equationSchema.safeParse(input)
 }
