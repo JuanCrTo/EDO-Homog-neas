@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "algebrite": "^1.4.0",
     "mathjs": "^14.4.0",
+    "mathlive": "^0.105.2",
     "nerdamer": "^1.1.13",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-katex": "^3.1.0",
+    "react-mathquill": "^1.0.3",
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
