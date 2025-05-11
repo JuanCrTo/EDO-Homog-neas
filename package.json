@@ -9,24 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "algebrite": "^1.4.0",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.9.0",
+    "katex": "^0.16.22",
     "mathjs": "^14.4.0",
     "mathlive": "^0.105.2",
     "nerdamer": "^1.1.13",
     "next": "15.3.2",
+    "postcss": "^8.5.3",
+    "python-shell": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-katex": "^3.1.0",
-    "react-mathquill": "^1.0.3",
+    "tailwindcss": "^4.1.6",
     "zod": "^3.24.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.14",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
+    "postcss": "^8.4.24",
     "typescript": "^5"
   }
 }
